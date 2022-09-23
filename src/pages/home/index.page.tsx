@@ -123,7 +123,7 @@ const Home = (props: Props) => {
 
   return (
     <>
-      <div className="fixed h-screen w-full bg-orange-200 overflow-hidden">
+      <div className="fixed h-screen w-full bg-[#fdd1a4] overflow-hidden">
         <img
           className="h-full w-full lg:w-2/3 object-cover opacity-40"
           src={bgImg.src}

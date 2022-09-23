@@ -31,7 +31,7 @@ const Footer = ({ smoothScroll }: Props) => {
       </a>
       {/* brand description */}
       <div className="p-4 pl-0">
-        <p className="tracking-tight font-thin 2sm:w-40 md:w-full">
+        <p className="tracking-tight 2sm:w-40 md:w-full">
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it
           to make a type specimen book.
@@ -127,18 +127,20 @@ const Footer = ({ smoothScroll }: Props) => {
     <div className=" w-full md:w-56 space-y-2 py-4 flex flex-col xl:tracking-widest">
       <p className="font-medium text-2xl mb-4">Follow Us</p>
       <div className="flex items-center space-x-4 mb-3 font-thin">
-        <FaceBookIcon style="fill-blue-500 w-8 h-8 hover:fill-amber-500" />
+        <FaceBookIcon style="hover:fill-blue-500 w-8 h-8 fill-white cursor-pointer" />
         <InstagramIcon
-          style={"w-8 h-8 fill-fuchsia-600 hover:fill-amber-500"}
+          style={"w-8 h-8 hover:fill-fuchsia-600 fill-white cursor-pointer"}
         />
-        <YoutubeIcon style={"w-8 h-8 fill-red-600 hover:fill-amber-500"} />
+        <YoutubeIcon
+          style={"w-8 h-8 hover:fill-red-600 fill-white cursor-pointer"}
+        />
       </div>
     </div>
   );
 
   return (
     <div
-      className={`z-10 relative w-full h-fit flex flex-wrap justify-start sm:justify-between text-[#555555] bg-white pt-10 pb-28 ${paddingClass}`}
+      className={`z-10 relative w-full h-fit flex flex-wrap justify-start sm:justify-between text-white bg-[#333] pt-10 pb-28 ${paddingClass}`}
     >
       <img
         className="hidden sm:block absolute left-48 bottom-0 h-36"
