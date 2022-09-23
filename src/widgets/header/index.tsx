@@ -40,7 +40,7 @@ const Header = ({ smoothScroll }: Props) => {
     <>
       <header
         className={`z-50 fixed top-0 right-0 h-24 w-full text-white flex items-center justify-between transition-colors duration-500 ${paddingClass} ${
-          isScroll ? "bg-[#000000c8]" : null
+          isScroll ? "bg-transparentD2" : null
         }`}
       >
         <div className="flex items-center space-x-14">

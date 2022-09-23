@@ -10,7 +10,7 @@ module.exports = {
         backdrop: "#0000007d",
         transparent: "rgba(255, 255, 255, 0)",
         transparentD: "#000000a8",
-        transparentD2: "#00000085",
+        transparentD2: "#000000c8",
       },
     },
   },
