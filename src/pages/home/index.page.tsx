@@ -19,6 +19,8 @@ import About from "./about";
 import Footer from "widgets/footer";
 
 import bgImg from "assets/images/frozen-snacks-bg-pattern.png";
+import bgImg2 from "assets/images/bgtry-1.jpeg";
+import bgImg3 from "assets/images/bgtry-2.jpg";
 
 type Props = {};
 
@@ -123,10 +125,10 @@ const Home = (props: Props) => {
 
   return (
     <>
-      <div className="fixed h-screen w-full bg-[#fdd1a4] overflow-hidden">
+      <div className="fixed h-screen w-full bg-[#f2bd87] overflow-hidden">
         <img
-          className="h-full w-full lg:w-2/3 object-cover opacity-40"
-          src={bgImg.src}
+          className="h-full w-full  object-cover opacity-[0.15]"
+          src={bgImg2.src}
         />
       </div>
       <MetaHead title="Alp Harvest" />
