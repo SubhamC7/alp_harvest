@@ -24,7 +24,7 @@ const Hero = ({ smoothScroll, heroImage }: Props) => {
         className="absolute object-cover w-[20rem] sm:w-[30rem] lg:w-[40rem] pointer-events-none"
         src={heroCenter.src}
       /> */}
-      <div className="absolute object-cover w-[20rem] sm:w-[30rem] h-[20rem] sm:h-[30rem] flex flex-col items-center justify-center">
+      <div className="absolute object-cover w-[20rem] sm:w-[30rem] h-[20rem] sm:h-[30rem] bg-[#00000055] flex flex-col items-center justify-center">
         <div className="w-full h-1/3 border-x-[14px] border-t-[14px] border-white flex items-end justify-center p-4">
           <p className="text-white text-xl sm:text-2xl font-semibold text-center">
             Open up your palate to the tastiest wonders
