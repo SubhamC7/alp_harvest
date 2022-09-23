@@ -24,7 +24,7 @@ collections:
           - { label: "About Body", name: "aboutText", widget: "string" }
 
           - label: "Product List"
-            name: "products"
+            name: "productTypes"
             widget: list
             fields:
               - { label: "Product Name", name: "name", widget: "string" }
