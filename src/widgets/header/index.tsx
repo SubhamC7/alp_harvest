@@ -21,7 +21,7 @@ const Header = ({ smoothScroll }: Props) => {
   return (
     <>
       <header
-        className={`z-50 fixed top-0 right-0 h-24 w-full bg-transparentD text-white flex items-center justify-between ${paddingClass}`}
+        className={`z-50 fixed top-0 right-0 h-24 w-full text-white flex items-center justify-between ${paddingClass}`}
       >
         <div className="flex items-center space-x-14">
           <a

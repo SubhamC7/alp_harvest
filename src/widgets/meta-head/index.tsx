@@ -19,18 +19,18 @@ const MetaHead = ({ title }: Props) => {
         <link rel="shortcut icon" href="/icons/logo.jpg" type="image/x-icon" />
 
         <meta name="title" content="Alp HARVEST" />
-        <meta name="description" content="Heavenly Test is here!" />
+        <meta name="description" content="Alp HARVEST" />
 
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content="https://https://alp-harvest.netlify.app"
         />
-        <meta property="og:title" content="Heavenly Test is here!" />
+        <meta property="og:title" content="Alp HARVEST" />
         <meta
           name="description"
           property="og:description"
-          content="Heavenly Test is here!"
+          content="Alp HARVEST"
         />
         <meta
           property="og:image"
@@ -46,8 +46,8 @@ const MetaHead = ({ title }: Props) => {
           property="twitter:url"
           content="https://https://alp-harvest.netlify.app"
         />
-        <meta property="twitter:title" content="Heavenly Test is here!" />
-        <meta property="twitter:description" content="Heavenly Test is here!" />
+        <meta property="twitter:title" content="Alp HARVEST" />
+        <meta property="twitter:description" content="Alp HARVEST" />
         <meta
           property="twitter:image"
           content="https://https://alp-harvest.netlify.app/icons/logo.jpg"
