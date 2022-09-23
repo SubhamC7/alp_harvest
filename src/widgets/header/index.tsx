@@ -30,7 +30,17 @@ const Header = ({ smoothScroll }: Props) => {
             }}
           >
             <div className="flex items-center cursor-pointer transition-all duration-300">
-              <div className={`headerLogo w-24 h-16 md:w-28 md:h-20`} />
+              {/* <div className={`headerLogo w-24 h-16 md:w-28 md:h-20`} /> */}
+              <div
+                className={`w-24 h-16 md:w-28 md:h-20 flex flex-col items-start justify-center overflow-hidden text-white hover:text-amber-400`}
+              >
+                <p className="text-4xl font-bold font-serif tracking-widest leading-8">
+                  Alp
+                </p>
+                <p className="text-xl font-medium font-serif tracking-tighter">
+                  HARVEST
+                </p>
+              </div>
             </div>
           </a>
           <div className="hidden text-sm xl:text-base sm:flex items-center justify-center space-x-4 xl:space-x-6">

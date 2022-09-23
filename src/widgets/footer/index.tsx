@@ -24,7 +24,7 @@ const Footer = ({ smoothScroll }: Props) => {
         onClick={() => {
           smoothScroll("top");
         }}
-        className="tracking-tighter whitespace-nowrap flex justify-start items-center w-fit text-3xl font-bold pt-2 transition-all duration-300 cursor-pointer"
+        className="tracking-tighter font-serif whitespace-nowrap flex justify-start items-center w-fit text-3xl font-bold pt-2 transition-all duration-300 cursor-pointer"
       >
         {/* <div className="w-20 h-12 md:w-28 md:h-20 headerLogo" /> */}
         Alp Harvest

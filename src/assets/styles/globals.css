@@ -53,7 +53,7 @@ select:required:invalid {
   background-position: center;
 }
 .aboutBgImg {
-  background-image: url("/assets/about-itc-background.jpg");
+  background-image: url("/assets/about-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
