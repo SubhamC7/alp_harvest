@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: public/images
+public_folder: images
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Content Storage"
+        name: "content-storage"
+        file: "content/content-storage.md"
+        fields:
+          - {
+              label: "Hero Image",
+              name: "heroImage",
+              widget: "image",
+              choose_url: true,
+              allow_multiple: false,
+            }
+
+          - { label: "About Text", name: "aboutTitle", widget: "string" }
+
+          - { label: "About Body", name: "aboutText", widget: "string" }
+
+          - label: "Product List"
+            name: "products"
+            widget: list
+            fields:
+              - { label: "Product Name", name: "name", widget: "string" }
+              - {
+                  label: "Product Description",
+                  name: "description",
+                  widget: "text",
+                }
+              - {
+                  label: "Product Image",
+                  name: "image",
+                  widget: "image",
+                  choose_url: true,
+                  allow_multiple: false,
+                }
