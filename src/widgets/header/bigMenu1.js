@@ -9,7 +9,7 @@ const BigMenu1 = ({ classNames, smoothScroll }) => {
         }}
       >
         <div className="flex items-center cursor-pointer transition-all duration-300">
-          <div className={`headerLogo w-24 h-16 md:w-28 md:h-24`} />
+          <div className={`headerLogo w-24 h-24 md:w-28 md:h-24`} />
         </div>
       </a>
       <div className="hidden text-sm xl:text-xl sm:flex items-center justify-center space-x-4 xl:space-x-6">
