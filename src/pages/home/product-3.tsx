@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Router from "next/router";
 import React from "react";
 
 type Props = {
@@ -33,14 +35,19 @@ const Product3 = ({
         <p className="text-xl font-semibold text-yellow-800 pb-4">
           {data.description}
         </p>
-        <button
+        <Link href={"/pickles"}>
+          <a className="w-60 h-14 flex items-center justify-center bg-green-500 text-lg font-bold text-white rounded-xl cursor-pointer active:scale-95 transition-all duration-500">
+            See All Products
+          </a>
+        </Link>
+        {/* <button
           onClick={() => {
             smoothScroll("about");
           }}
-          className="w-52 h-16 bg-yellow-600 text-lg font-bold text-white rounded-xl cursor-pointer active:scale-95 transition-all duration-500"
+          className="w-60 h-14 bg-yellow-600 text-lg font-bold text-white rounded-xl cursor-pointer active:scale-95 transition-all duration-500"
         >
-          Know More
-        </button>
+          See More
+        </button> */}
       </div>
     </div>
   );

@@ -8,13 +8,15 @@ import {
 } from "../../../content/content-storage.md";
 
 import AppStore from "AppStore";
+
+import { reveal } from "AppActions";
+
 import Header from "widgets/header";
 import MetaHead from "widgets/meta-head";
 import Hero from "./hero";
 import Product1 from "./product-1";
 import Product2 from "./product-2";
 import Product3 from "./product-3";
-import Product4 from "./product-4";
 import About from "./about";
 import Footer from "widgets/footer";
 
@@ -34,7 +36,6 @@ const Home = (props: Props) => {
   const product1Ref: any = useRef(null);
   const product2Ref: any = useRef(null);
   const product3Ref: any = useRef(null);
-  const product4Ref: any = useRef(null);
 
   const smoothScroll = (destination: string) => {
     console.log("destination", destination);
@@ -80,42 +81,7 @@ const Home = (props: Props) => {
           });
         }
         break;
-      case "product4":
-        {
-          window.scrollTo({
-            top: product4Ref.current.offsetTop + 780,
-            behavior: "smooth",
-          });
-        }
-        break;
     }
-  };
-
-  const reveal = () => {
-    var elements1 = document.querySelectorAll(".holder1");
-
-    elements1.forEach((element) => {
-      var top = element.getBoundingClientRect().top;
-      if (top < window.innerHeight - 100) {
-        element.classList.add("fadeInUp");
-      }
-    });
-    var elements2 = document.querySelectorAll(".holder2");
-
-    elements2.forEach((element) => {
-      var top = element.getBoundingClientRect().top;
-      if (top < window.innerHeight - 100) {
-        element.classList.add("fadeLeft");
-      }
-    });
-    var elements3 = document.querySelectorAll(".holder3");
-
-    elements3.forEach((element) => {
-      var top = element.getBoundingClientRect().top;
-      if (top < window.innerHeight - 100) {
-        element.classList.add("fadeRight");
-      }
-    });
   };
 
   useEffect(() => {
@@ -161,16 +127,8 @@ const Home = (props: Props) => {
             data={productTypes[2]}
           />
         </div>
-        {/* <div ref={product4Ref}>
-          <Product4
-            animateClass1="holder2"
-            animateClass2="holder3"
-            smoothScroll={smoothScroll}
-            data={products[3]}
-          />
-        </div> */}
       </div>
-      <div ref={aboutRef} className={`z-10 relative`}>
+      <div id="about" ref={aboutRef} className={`z-10 relative`}>
         <About
           data={{ title: aboutTitle, body: aboutText }}
           animateClass1="holder1"

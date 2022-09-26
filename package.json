@@ -15,6 +15,7 @@
     "axios": "^0.26.0",
     "axios-retry": "^3.2.5",
     "frontmatter-markdown-loader": "^3.7.0",
+    "gray-matter": "^4.0.3",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-admin": "^4.2.0",
