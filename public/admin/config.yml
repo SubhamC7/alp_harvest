@@ -70,9 +70,9 @@ collections:
           allow_multiple: false,
         }
 
-  - name: "processed-meat" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "processedMeat" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Processed Meat" # Used in the UI
-    folder: "content/processed-meat"
+    folder: "content/processedMeat"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Name", name: "name", widget: "string" }
