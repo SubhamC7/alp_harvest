@@ -1,7 +1,5 @@
 import React from "react";
 
-import heroCenter from "assets/images/itc-banner-1.png";
-
 import AppStore from "AppStore";
 
 type Props = {

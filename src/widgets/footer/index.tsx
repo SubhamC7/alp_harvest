@@ -7,9 +7,9 @@ import FaceBookIcon from "assets/svg/FaceBookIcon";
 import InstagramIcon from "assets/svg/InstagramIcon";
 import YoutubeIcon from "assets/svg/YoutubeIcon";
 
-import image1 from "assets/images/fork-and-spoon.png";
-import image2 from "assets/images/chopping-board.png";
-import image3 from "assets/images/salt-shaker.png";
+import image1 from "../../../public/assets/fork-and-spoon.png";
+import image2 from "../../../public/assets/chopping-board.png";
+import image3 from "../../../public/assets/salt-shaker.png";
 
 import appStore from "AppStore";
 

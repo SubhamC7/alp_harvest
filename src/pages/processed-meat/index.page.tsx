@@ -9,9 +9,7 @@ import Hero from "widgets/product-hero";
 import Product from "widgets/product";
 import Footer from "widgets/footer";
 
-import bgImg from "assets/images/frozen-snacks-bg-pattern.png";
-import bgImg2 from "assets/images/bgtry-1.jpeg";
-import bgImg3 from "assets/images/bgtry-2.jpg";
+import bgImg from "../../../public/assets/bgPicture-1.jpg";
 
 import fs from "fs";
 import path from "path";
@@ -36,7 +34,7 @@ const ProcessedMeat = ({ products }: Props) => {
       <div className="fixed h-screen w-full bg-[#f2bd87] overflow-hidden">
         <img
           className="h-full w-full  object-cover opacity-[0.15]"
-          src={bgImg2.src}
+          src={bgImg.src}
         />
       </div>
       <MetaHead title="Processed Meat | Alp Harvest" />
@@ -44,7 +42,7 @@ const ProcessedMeat = ({ products }: Props) => {
       <div>
         <Hero
           title={"Processed Meat"}
-          heroImage={"images/processed-meat.jpg"}
+          heroImage={"assets/processed-meat.jpg"}
           animateClass="holder1"
         />
       </div>

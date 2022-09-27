@@ -18,9 +18,7 @@ import Product3 from "./product-3";
 import About from "./about";
 import Footer from "widgets/footer";
 
-import bgImg from "assets/images/frozen-snacks-bg-pattern.png";
-import bgImg2 from "assets/images/bgtry-1.jpeg";
-import bgImg3 from "assets/images/bgtry-2.jpg";
+import bgImg from "../../../public/assets/bgPicture-1.jpg";
 
 import fs from "fs";
 import path from "path";
@@ -98,7 +96,7 @@ const Home = ({ response }: Props) => {
       <div className="fixed h-screen w-full bg-[#f2bd87] overflow-hidden">
         <img
           className="h-full w-full  object-cover opacity-[0.15]"
-          src={bgImg2.src}
+          src={bgImg.src}
         />
       </div>
       <MetaHead title="Alp Harvest" />

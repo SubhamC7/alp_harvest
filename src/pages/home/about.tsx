@@ -1,7 +1,7 @@
 import React from "react";
 
-import aboutImg1 from "assets/images/cheesy-corn-dish.png";
-import aboutImg2 from "assets/images/prawn-noodles.png";
+import aboutImg1 from "../../../public/assets/cheesy-corn-dish.png";
+import aboutImg2 from "../../../public/assets/prawn-noodles.png";
 
 type Props = { data: any; animateClass1: any; animateClass2: any };
 
