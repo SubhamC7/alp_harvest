@@ -63,8 +63,8 @@ collections:
           - { label: "Variety Name", name: "name", widget: "string" }
 
       - {
-          label: "Hero Image",
-          name: "heroImage",
+          label: "Product Image",
+          name: "image",
           widget: "image",
           choose_url: true,
           allow_multiple: false,
