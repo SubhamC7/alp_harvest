@@ -18,7 +18,10 @@ const Product = ({
       <div
         className={`${animateClass1} w-full lg:w-1/2 flex items-center justify-center lg:justify-end p-4`}
       >
-        <img src={data.image} />
+        <img
+          style={{ filter: "drop-shadow(5px 5px 20px #333333a0)" }}
+          src={data.image}
+        />
       </div>
       <div
         className={`${animateClass2} w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center space-y-5 p-4`}
