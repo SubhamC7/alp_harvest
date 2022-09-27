@@ -4,5 +4,5 @@ description: Lorem Ipsum has been the industry's standard dummy text ever since 
 varieties:
   - name: Bamboo Shoot & Ghost Chilli 100 gms
   - name: Bamboo Shoot & Ghost Chilli 250 gms
-image: images/Website-Banner_Chutneys.png
+image: images/pickles.png
 ---
