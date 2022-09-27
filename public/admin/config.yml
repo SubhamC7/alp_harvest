@@ -8,8 +8,8 @@ collections:
   - name: "homeAbout"
     label: "About"
     files:
-      - label: "Hero and About"
-        name: "content-heroAbout"
+      - name: "content-heroAbout"
+        label: "Hero and About"
         file: "content/homeData/content-heroAbout.md"
         fields:
           - {
@@ -23,11 +23,9 @@ collections:
           - { label: "About Text", name: "aboutTitle", widget: "string" }
 
           - { label: "About Body", name: "aboutText", widget: "string" }
-  - name: "homeAbout"
-    label: "About"
-    files:
-      - label: "Product Types"
-        name: "content-productTypes"
+
+      - name: "content-productTypes"
+        label: "Product Types"
         file: "content/homeData/content-productTypes.md"
         fields:
           - label: "Product List"
