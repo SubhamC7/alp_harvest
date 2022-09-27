@@ -6,7 +6,7 @@ media_folder: public/images
 public_folder: images
 collections:
   - name: "homeAbout"
-    label: "About"
+    label: "Home"
     files:
       - name: "content-heroAbout"
         label: "Hero and About"
