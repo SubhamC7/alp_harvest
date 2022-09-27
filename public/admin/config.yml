@@ -47,14 +47,14 @@ collections:
                   allow_multiple: false,
                 }
 
-  - name: "seaFood" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Sea Foods" # Used in the UI
+  - name: "seaFood"
+    label: "Sea Foods"
     folder: "content/seaFood"
     label_singular: "Seafood Product"
     #identifier_field: name
-    slug: "{{year}}-{{month}}-{{day}}-{{name}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    slug: "{{name}}-{{year}}-{{month}}-{{day}}"
+    create: true
+    fields:
       - { label: "Name", name: "name", widget: "string" }
 
       - { label: "Description", name: "description", widget: "string" }
@@ -73,12 +73,13 @@ collections:
           allow_multiple: false,
         }
 
-  - name: "processedMeat" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Processed Meat" # Used in the UI
+  - name: "processedMeat"
+    label: "Processed Meat"
     folder: "content/processedMeat"
     label_singular: "Meat Product"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    slug: "{{name}}-{{year}}-{{month}}-{{day}}"
+    create: true
+    fields:
       - { label: "Name", name: "name", widget: "string" }
 
       - { label: "Description", name: "description", widget: "string" }
@@ -101,8 +102,9 @@ collections:
     label: "Pickles" # Used in the UI
     folder: "content/pickles"
     label_singular: "Pickle Product" # Used in the UI, ie: "New Post"
+    slug: "{{name}}-{{year}}-{{month}}-{{day}}"
     create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    fields: # The fields each document have of this folder collection
       - { label: "Name", name: "name", widget: "string" }
 
       - { label: "Description", name: "description", widget: "string" }
