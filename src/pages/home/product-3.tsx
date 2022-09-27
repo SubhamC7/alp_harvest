@@ -16,7 +16,7 @@ const Product3 = ({
   data,
 }: Props) => {
   return (
-    <div className="h-screen w-full flex flex-wrap items-center justify-center">
+    <div className="h-fit lg:h-screen w-full flex flex-wrap items-center justify-center">
       <div
         className={`${animateClass1} w-full lg:w-1/2 flex items-center justify-center lg:justify-end p-4`}
       >
@@ -27,7 +27,7 @@ const Product3 = ({
         />
       </div>
       <div
-        className={`${animateClass2} w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center space-y-5 p-4`}
+        className={`${animateClass2} w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center space-y-5 p-4 mb-14`}
       >
         <p className="text-4xl font-semibold text-yellow-800 font-serif">
           {data.name}

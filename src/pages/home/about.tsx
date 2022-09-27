@@ -7,7 +7,7 @@ type Props = { data: any; animateClass1: any; animateClass2: any };
 
 const About = ({ data, animateClass1, animateClass2 }: Props) => {
   return (
-    <div className="h-fit lg:h-[35rem] w-full flex flex-wrap items-center justify-center aboutBgImg bg-[#eeb472d8]">
+    <div className="h-fit lg:h-[35rem] w-full flex flex-wrap items-center justify-center aboutBgImg bg-[#f7c156e2]">
       <div
         className={`${animateClass2} w-full lg:w-2/5 h-96 flex flex-wrap items-center justify-center p-4 lg:p-8`}
       >

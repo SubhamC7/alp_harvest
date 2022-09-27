@@ -2,10 +2,8 @@ import React, { useEffect, useRef } from "react";
 
 import Head from "next/head";
 import { Component } from "react";
-import {
-  attributes,
-  react as contentStorage,
-} from "../../../content/content-storage.md";
+// import { attributes } from "../../../content/content-heroAbout.md";
+// import { attributes } from "../../../content/content-productTypes.md";
 
 import AppStore from "AppStore";
 
@@ -24,12 +22,18 @@ import bgImg from "assets/images/frozen-snacks-bg-pattern.png";
 import bgImg2 from "assets/images/bgtry-1.jpeg";
 import bgImg3 from "assets/images/bgtry-2.jpg";
 
-type Props = {};
+import fs from "fs";
+import path from "path";
+import grayMatter from "gray-matter";
 
-const Home = (props: Props) => {
+type Props = { response: any };
+
+const Home = ({ response }: Props) => {
   const [paddingClass] = AppStore("paddingClass");
 
-  let { heroImage, aboutTitle, aboutText, productTypes } = attributes;
+  console.log("response", response);
+  // let { heroImage, aboutTitle, aboutText } = response[0];
+  // let { productTypes } = response[1];
 
   const topRef: any = useRef(null);
   const aboutRef: any = useRef(null);
@@ -100,7 +104,7 @@ const Home = (props: Props) => {
       <MetaHead title="Alp Harvest" />
       <Header smoothScroll={smoothScroll} />
       <div ref={topRef}>
-        <Hero heroImage={heroImage} />
+        <Hero heroImage={response[0].heroImage} />
       </div>
       <div className={`z-10 relative overflow-hidden ${paddingClass}`}>
         <div ref={product1Ref}>
@@ -108,7 +112,7 @@ const Home = (props: Props) => {
             animateClass1="holder2"
             animateClass2="holder3"
             smoothScroll={smoothScroll}
-            data={productTypes[0]}
+            data={response[1].productTypes[0]}
           />
         </div>
         <div ref={product2Ref}>
@@ -116,7 +120,7 @@ const Home = (props: Props) => {
             animateClass1="holder2"
             animateClass2="holder3"
             smoothScroll={smoothScroll}
-            data={productTypes[1]}
+            data={response[1].productTypes[1]}
           />
         </div>
         <div ref={product3Ref}>
@@ -124,13 +128,16 @@ const Home = (props: Props) => {
             animateClass1="holder2"
             animateClass2="holder3"
             smoothScroll={smoothScroll}
-            data={productTypes[2]}
+            data={response[1].productTypes[2]}
           />
         </div>
       </div>
       <div id="about" ref={aboutRef} className={`z-10 relative`}>
         <About
-          data={{ title: aboutTitle, body: aboutText }}
+          data={{
+            title: response[0].aboutTitle,
+            body: response[0].aboutText,
+          }}
           animateClass1="holder1"
           animateClass2="holder2"
         />
@@ -141,3 +148,21 @@ const Home = (props: Props) => {
 };
 
 export default Home;
+
+export async function getStaticProps() {
+  const files = fs.readdirSync(path.join("content/homeData"));
+
+  const response = files.map((filename) => {
+    const slug = filename.replace(".md", "");
+    const fileData = fs.readFileSync(path.join("content/homeData", filename));
+    const { data } = grayMatter(fileData);
+    return {
+      ...data,
+    };
+  });
+
+  // console.log("products", products);
+  return {
+    props: { response },
+  };
+}

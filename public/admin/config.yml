@@ -1,15 +1,16 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+local_backend: true
 media_folder: public/images
 public_folder: images
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "homeAbout"
+    label: "Home-About"
     files:
-      - label: "Alp Admin"
-        name: "content-storage"
-        file: "content/content-storage.md"
+      - label: "Hero and About"
+        name: "content-heroAbout"
+        file: "content/homeData/content-heroAbout.md"
         fields:
           - {
               label: "Hero Image",
@@ -22,10 +23,17 @@ collections:
           - { label: "About Text", name: "aboutTitle", widget: "string" }
 
           - { label: "About Body", name: "aboutText", widget: "string" }
-
+  - name: "homeProductTypes"
+    label: "Product Types"
+    files:
+      - label: "Product Types"
+        name: "content-productTypes"
+        file: "content/homeData/content-productTypes.md"
+        fields:
           - label: "Product List"
             name: "productTypes"
             widget: list
+            create: false
             fields:
               - { label: "Product Name", name: "name", widget: "string" }
               - {

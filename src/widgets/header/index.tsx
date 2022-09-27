@@ -50,7 +50,7 @@ const Header = ({ smoothScroll }: Props) => {
         {smoothScroll ? (
           <BigMenu1 classNames={classNames} smoothScroll={smoothScroll} />
         ) : (
-          <BigMenu2 classNames={classNames} smoothScroll={smoothScroll} />
+          <BigMenu2 classNames={classNames} />
         )}
 
         <div className="flex sm:hidden">

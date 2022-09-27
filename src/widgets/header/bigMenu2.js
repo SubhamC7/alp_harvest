@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const BigMenu2 = ({ classNames, smoothScroll }) => {
+const BigMenu2 = ({ classNames }) => {
   return (
     <div className="flex items-center space-x-14">
       <Link href={"/"}>

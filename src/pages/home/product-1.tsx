@@ -16,7 +16,7 @@ const Product1 = ({
   data,
 }: Props) => {
   return (
-    <div className="h-screen w-full flex flex-wrap items-center justify-center">
+    <div className="h-fit lg:h-screen w-full flex flex-wrap items-center justify-center">
       <div
         className={`${animateClass1} w-full lg:w-1/2 flex items-center justify-center lg:justify-end p-4`}
       >
