@@ -99,7 +99,6 @@ collections:
     label: "Pickles" # Used in the UI
     folder: "content/pickles"
     label_singular: "Add New Product" # Used in the UI, ie: "New Post"
-    slug: "{{year}}-{{month}}-{{day}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Name", name: "name", widget: "string" }
