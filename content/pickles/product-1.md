@@ -1,5 +1,5 @@
 ---
-name: Pickles from Assam
+name: Pickles from Assami
 description: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
 varieties:
   - name: Bamboo Shoot & Ghost Chilli 100 gms
