@@ -50,6 +50,7 @@ collections:
   - name: "seaFood" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Sea Foods" # Used in the UI
     folder: "content/seaFood"
+    label_singular: "Add New"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Name", name: "name", widget: "string" }
@@ -73,6 +74,7 @@ collections:
   - name: "processedMeat" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Processed Meat" # Used in the UI
     folder: "content/processedMeat"
+    label_singular: "Add New"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Name", name: "name", widget: "string" }
