@@ -52,7 +52,7 @@ collections:
     folder: "content/seaFood"
     label_singular: "Seafood Product"
     #identifier_field: name
-    slug: "{{year}}-{{month}}-{{day}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{name}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Name", name: "name", widget: "string" }
