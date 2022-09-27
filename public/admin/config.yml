@@ -31,7 +31,7 @@ collections:
           - label: "Product List"
             name: "productTypes"
             widget: list
-            edit: false
+            allow_add: false
             fields:
               - { label: "Product Name", name: "name", widget: "string" }
               - {
