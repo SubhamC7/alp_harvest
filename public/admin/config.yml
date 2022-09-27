@@ -6,8 +6,8 @@ media_folder: public/images
 public_folder: images
 collections:
   - name: "homeAbout"
-    label: "Home-About"
-    folder: "home"
+    label: "About"
+    files:
       - label: "Hero and About"
         name: "content-heroAbout"
         file: "content/homeData/content-heroAbout.md"
@@ -23,6 +23,9 @@ collections:
           - { label: "About Text", name: "aboutTitle", widget: "string" }
 
           - { label: "About Body", name: "aboutText", widget: "string" }
+  - name: "homeAbout"
+    label: "About"
+    files:
       - label: "Product Types"
         name: "content-productTypes"
         file: "content/homeData/content-productTypes.md"
