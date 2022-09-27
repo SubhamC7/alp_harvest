@@ -26,7 +26,7 @@ type Props = { products: any };
 const Pickles = ({ products }: Props) => {
   const [paddingClass] = AppStore("paddingClass");
 
-  console.log("products", products);
+  // console.log("products", products);
 
   useEffect(() => {
     window.addEventListener("scroll", reveal);

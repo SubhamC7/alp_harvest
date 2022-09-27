@@ -31,7 +31,7 @@ type Props = { response: any };
 const Home = ({ response }: Props) => {
   const [paddingClass] = AppStore("paddingClass");
 
-  console.log("response", response);
+  // console.log("response", response);
   // let { heroImage, aboutTitle, aboutText } = response[0];
   // let { productTypes } = response[1];
 
@@ -42,7 +42,7 @@ const Home = ({ response }: Props) => {
   const product3Ref: any = useRef(null);
 
   const smoothScroll = (destination: string) => {
-    console.log("destination", destination);
+    // console.log("destination", destination);
     switch (destination) {
       case "top":
         {

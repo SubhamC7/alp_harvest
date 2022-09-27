@@ -26,8 +26,6 @@ type Props = { products: any };
 const ProcessedMeat = ({ products }: Props) => {
   const [paddingClass] = AppStore("paddingClass");
 
-  console.log("products", products);
-
   useEffect(() => {
     window.addEventListener("scroll", reveal);
     return () => window.removeEventListener("scroll", reveal);
