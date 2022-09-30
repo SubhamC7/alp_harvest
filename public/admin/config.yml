@@ -7,7 +7,7 @@ backend:
 #   url: http://localhost:8081/api/v1
 #   # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
 #   allowed_hosts: ["192.168.0.1"]
-logo_url: https://alp-harvest.netlify.app/icons/logo2op.jpg
+logo_url: https://alp-harvest.netlify.app/assets/fresh-uncooked-meat-wooden-board-with-knife.jpg
 media_folder: public/images
 public_folder: images
 collections:
